@@ -25,7 +25,7 @@
     </nav>
     <main class="w-full">
         <div class="h-1/12 m-30"></div>
-        <section id="home" class="h-screen flex flex-col items-center text-center justify-evenly mb-48">
+        <section id="home" class="min-h-screen flex flex-col items-center text-center justify-evenly mb-48">
             <div class="bg-accentpale bg-opacity-80 rounded-full py-20 px-5 mx-5">
                 <h1 class="p-5 text-5xl">Hi! I'm Sophia.</h1>
                 <h2 class="p-5 text-2xl"> I'm a full stack developer in training, based in London.</h2>
@@ -43,53 +43,62 @@
             </div>
             <p><a href="#projects" class="self-end justify-self-end text-accentmid text-opacity-80">Click to find out more about my work</a></p>
         </section>
-        <section id="projects" class="h-screen flex flex-col items-center text-center justify-around">
+        <section id="projects" class="min-h-screen flex flex-col items-center text-center justify-around">
             <h2  class="p-5 text-5xl mt-28">Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 text-lg md:text-xl">
                 <div class="m-2 rounded-xl shadow-lg bg-[url('./images/project1image.png')] bg-cover sm:h-4/12">
                 <div class="pb-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                    <p class="bg-navs p-5 my-2 text-dark text-left shadow-md">New Zealand birds - responsive website design</p>
+                    <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                        <p class="text-xl font-bold">New Zealand Birds</p>
+                        <p>Responsive website design | Nov 2023</p>
+                    </div>
                     <span class="hidden sm:inline-flex"><br><br></span>
                     <div>
-                        <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/nz-birds/" target="_blank">Click here to view this project</a></p>
-                        <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/nz-birds" target="_blank">Click here to visit the GitHub repository</a></p>
+                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/nz-birds/" target="_blank">Click here to view this project</a></p>
+                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/nz-birds" target="_blank">Click here to visit the GitHub repository</a></p>
                     </div>
                 </div>
                 </div>
                 <div class="m-2 rounded-xl shadow-lg bg-[url('./images/project2image.png')] bg-cover sm:h-4/12">
                     <div class="pb-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <p class="bg-navs p-5 my-2 text-dark text-left shadow-md">Character quiz - JavaScript-based Dungeons and Dragons personality test</p>
-                        <span class="hidden sm:inline-flex"><br><br></span>
+                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                            <p class="text-xl font-bold">DND Character Quiz</p>
+                            <p>JavaScript-based quiz | Dec 2023</p>
+                        </div>                        <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/dnd-quiz/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/dnd-quiz" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/dnd-quiz/" target="_blank">Click here to view this project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/dnd-quiz" target="_blank">Click here to visit the GitHub repository</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="m-2 rounded-xl shadow-lg bg-[url('./images/project3image.png')] bg-cover sm:h-4/12">
                     <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <p class="bg-navs p-5 my-2 text-dark text-left shadow-md">Escape - text-based adventure in Javascript</p>
-                        <span class="hidden sm:inline-flex"><br><br></span>
+                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                            <p class="text-xl font-bold">Escape</p>
+                            <p>Text-based adventure game in JavaScript | Dec 2023</p>
+                        </div>                        <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/adventure-game-assignment/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/adventure-game-assignment" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/adventure-game-assignment/" target="_blank">Click here to view this project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/adventure-game-assignment" target="_blank">Click here to visit the GitHub repository</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="m-2 rounded-xl shadow-lg bg-[url('./images/project4image.png')] bg-cover sm:h-4/12">
                     <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <p class="bg-navs p-5 my-2 text-dark text-left shadow-md">Mudlark - JavaScript game</p>
-                        <span class="hidden sm:inline-flex"><br><br></span>
+                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                            <p class="text-xl font-bold">Mudlark</p>
+                            <p>JavaScript game using HTML Canvas | Oct 2023</p>
+                        </div>                        <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/mudlark/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-peaches p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/mudlark" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/mudlark/" target="_blank">Click here to view this project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/mudlark" target="_blank">Click here to visit the GitHub repository</a></p>
                         </div>
                     </div>
                 </div>
             </div>    
             <p><a href="#skills" class="self-end justify-self-end p-20 text-accentmid text-opacity-80">Click to find out more about my skills</a></p>
         </section>
-        <section id="skills" class="h-screen mt-20 flex flex-col items-center justify-around">
+        <section id="skills" class="min-h-screen mt-20 flex flex-col items-center justify-around">
             <h2 class="p-5 text-5xl">Skills</h2>
             <div class="flex flex-col">
                 <div class="flex flex-row px-5 items-center">
@@ -141,13 +150,21 @@
             </div>
             <p><a href="#about" class="self-end mt-30 text-accentmid text-opacity-80">Click to find out more about me</a></p>
         </section>
-        <section id="about" class="h-screen mt-20 flex flex-col items-center text-center justify-around">
+        <section id="about" class="min-h-screen mt-20 flex flex-col items-center text-center justify-around">
             <h2 class="p-5 text-5xl">About</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2">
-                <div class="p-5 m-2 bg-accentmid border-2 border-dark border-opacity-60 rounded-full shadow-lg">
-                    
+            <div class="grid grid-cols-1 sm:grid-cols-2 mx-10">
+                <div class="p-5 sm:p-10 m-2 bg-accentmid bg-opacity-60 rounded-full shadow-lg text-lg sm:text-2xl">
+                    <p class="m-8 p-5">Hi, thanks for visiting!
+                    <br>I made a career change to software development after having worked in welfare benefits policy for several years.
+                    <br>As a result I'm very interested in "tech for good" and opportunities to use technical expertise to solve social problems.
+                    <br>I'm always looking to learn new things and take on new challenges. 
+                    <br>Got a puzzle you think I can help solve?</p>
+                    <a href="mailto:sophia.m.warren@gmail.com" target="_blank" class="bg-peaches text-2xl text-dark hover:bg-dark hover:text-white hover:font-bold p-5 m-10 rounded-full border-dark border-2">Get in touch</a>
+                    <p class="m-8 p-5">When I'm not tapping away at a keyboard, I can often be found tapping away at a piano, strumming away at a guitar or singing my little heart out.
+                    <br>I'm also a huge foodie and a lover of tabletop RPGs.
+                    </p>
                 </div>
-                <img src="./images/favicon.png">
+                <img src="./images/favicon.png" class="my-10 sm:my-auto mx-auto max-h-72 sm:max-h-96">
             </div>
             <p><a href="#home" class="self-end justify-self-center text-center w-full p-5 text-accentmid text-opacity-80">Back to top</a></p>
         </section>
