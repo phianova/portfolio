@@ -13,21 +13,21 @@
     <script src="https://kit.fontawesome.com/ed04c02abc.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-display subpixel-antialiased bg-opacity-80 bg-center bg-cover bg-no-repeat">
-    <nav class="fixed top-0 left-0 flex flex-col sm:flex-row sm:justify-around h-1/12 w-full bg-navs text-dark shadow-lg z-50">
+    <nav class="fixed top-0 left-0 flex flex-col sm:flex-row sm:justify-around sm:align-center h-1/12 w-full bg-navs text-dark shadow-lg z-50">
         <button id="menu-button" onclick="menuOpenClose()" class="material-symbols-outlined self-start justify-self-start sm:hidden p-3 m-2">menu
         </button>
-        <img src="#" href="#home" class="hidden sm:inline-flex p-3 m-2">
-        <p id="navlink1" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#home">Home</a></p>
-        <p id="navlink2" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#projects">Projects</a></p>
-        <p id="navlink3" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#skills">Skills</a></p>
-        <p id="navlink4" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#about">About</a></p>
-        <p id="navlink5" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#footer">Contact</a></p>
-        <button id="navlink6" class="hidden sm:inline-flex p-3 m-2 rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="./CV.pdf" target="_blank">Download CV</button>
+        <a href="#home" ><img src="./images/logo.png" class="hidden sm:inline-flex my-2 max-h-20"></a>
+        <p id="navlink1" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#home">Home</a></p>
+        <p id="navlink2" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#projects">Projects</a></p>
+        <p id="navlink3" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#skills">Skills</a></p>
+        <p id="navlink4" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#about">About</a></p>
+        <p id="navlink5" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#footer">Contact</a></p>
+        <button id="navlink6" class="hidden sm:inline-flex p-3 md:text-xl my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="./CV.pdf" target="_blank">Download CV</button>
     </nav>
     <main class="w-full">
         <div class="h-1/12 m-30"></div>
-        <section id="home" class="min-h-screen flex flex-col items-center text-center justify-evenly">
-            <div class="bg-accentpale bg-opacity-80 rounded-full py-20 px-5 mx-5 drop-shadow-lg mt-20">
+        <section id="home" class="min-h-screen flex flex-col items-center text-center justify-evenly bg-right-bottom bg-no-repeat bg-blend-screen bg-[url('./images/avatar2.png')]">
+            <div class="bg-accentpale bg-opacity-90 rounded-full py-20 px-5 mx-5 drop-shadow-lg mt-20">
                 <h1 class="p-5 text-5xl">Hi! I'm Sophia.</h1>
                 <h2 class="p-5 text-2xl"> I'm a full stack developer in training, based in London.</h2>
             </div>
@@ -55,10 +55,10 @@
                 <span class="py-3"></span>
                 <p class="p-5 text-lg md:text-2xl">or <a href="./CV.pdf" target="_blank" class="font-bold hover:text-white hover:bg-dark rounded-xl border-dark border-2 p-3">Download CV</a></p>
             </div>
-            <p><a href="#projects" class="self-end justify-self-end text-accentmid text-opacity-80">Click to find out more about my work</a></p>
+            <p><a href="#projects" class="self-end justify-self-end text-dark bg-accentpale p-3 rounded-full bg-opacity-80 text-opacity-80">Click to find out more about my work</a></p>
         </section>
-        <section id="projects" class="min-h-screen flex flex-col items-center text-center justify-around">
-            <h2  class="p-5 text-5xl mt-20">Projects</h2>
+        <section id="projects" class="min-h-screen flex flex-col items-center text-center justify-around bg-gradient-to-bl from-dark to-green-950 pb-20">
+            <h2  class="p-5 text-5xl mt-20 text-white">Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 text-lg md:text-xl mb-20 w-11/12">
                 <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project1image.png')] bg-cover sm:h-4/12">
                 <div class="pb-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
@@ -68,8 +68,8 @@
                     </div>
                     <span class="hidden sm:inline-flex"><br><br></span>
                     <div>
-                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/nz-birds/" target="_blank">Click here to view this project</a></p>
-                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/nz-birds" target="_blank">Click here to visit the GitHub repository</a></p>
+                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://phianova.github.io/nz-birds/" target="_blank">View project</a></p>
+                        <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/nz-birds" target="_blank">Github repo</a></p>
                     </div>
                 </div>
                 </div>
@@ -80,8 +80,8 @@
                             <p>JavaScript-based quiz | Dec 2023</p>
                         </div>                        <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/dnd-quiz/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/dnd-quiz" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://phianova.github.io/dnd-quiz/" target="_blank">View project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/dnd-quiz" target="_blank">GitHub repo</a></p>
                         </div>
                     </div>
                 </div>
@@ -93,8 +93,8 @@
                         </div>                        
                         <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/adventure-game-assignment/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/adventure-game-assignment" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://phianova.github.io/adventure-game-assignment/" target="_blank">View project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/adventure-game-assignment" target="_blank">Github repo</a></p>
                         </div>
                     </div>
                 </div>
@@ -106,15 +106,15 @@
                         </div>                        
                         <span class="hidden sm:inline-flex"><br><br></span>
                         <div>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://phianova.github.io/mudlark/" target="_blank">Click here to view this project</a></p>
-                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md"><a href="https://github.com/phianova/mudlark" target="_blank">Click here to visit the GitHub repository</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://phianova.github.io/mudlark/" target="_blank">View project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/mudlark" target="_blank">Github repo</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <p><a href="#skills" class="self-end justify-self-end p-20 mt-20 text-accentmid text-opacity-80">Click to find out more about my skills</a></p>
+            <p><a href="#skills" class="py-20 mt-20 text-white text-opacity-80">Click to find out more about my skills</a></p>
         </section>
-        <section id="skills" class="min-h-screen mt-20 flex flex-col items-center justify-around">
+        <section id="skills" class="min-h-screen py-20 flex flex-col items-center justify-around bg-gradient-to-br from-accentpale to-white">
             <h2 class="mt-20 p-5 text-5xl">Skills</h2>
             <div class="flex flex-col">
                 <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
@@ -217,11 +217,11 @@
         </section>
     </main>
     <footer id="footer" class="p-10 flex flex-col items-center justify-around h-1/12 w-full bg-navs text-dark shadow-lg z-50">
-        <div class="flex flex-row flex-wrap text-lg">
-            <p id="navlink1" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#home">Home</a></p>
+        <div class="flex flex-row flex-wrap text-md">
+            <p id="navlink1" class="pr-3 py-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#home">Home</a></p>
             <p id="navlink2" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#projects">Projects</a></p>
             <p id="navlink3" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#skills">Skills</a></p>
-            <p id="navlink4" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#about">About</a></p>
+            <p id="navlink4" class="pl-3 py-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#about">About</a></p>
         </div>
         <div class="p-10 flex flex-row justify-center content-center items-center">
             <a href="https://www.linkedin.com/in/sophia-warren-48207913b/" target="_blank">
@@ -244,7 +244,7 @@
             <span class="px-3"></span>
             <button id="navlink6" class="p-2 rounded-full hover:bg-dark border-2 border-dark hover:font-bold hover:text-white" href="./CV.pdf" target="_blank">CV</button>    
         </div>
-        <p>© Sophia Warren 2023</p>
+        <p class="py-5 mb-10">© Sophia Warren 2023</p>
     </footer>
     <script src="features.js"></script>
 </body>
