@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.0"
+    "tailwindcss": "^3.4.1"
   },
   "name": "portfolio",
   "description": "Professional portfolio site created in HTML, Tailwind CSS and JavaScript",
@@ -10,5 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwind": "^4.0.0"
+  }
 }

@@ -14,25 +14,25 @@
 </head>
 <body class="font-display subpixel-antialiased bg-opacity-80 bg-center bg-cover bg-no-repeat">
     <nav class="fixed top-0 left-0 flex flex-col sm:flex-row sm:justify-around sm:align-center h-1/12 w-full bg-navs text-dark shadow-lg z-50">
-        <button id="menu-button" onclick="menuOpenClose()" class="material-symbols-outlined self-start justify-self-start sm:hidden p-3 m-2">menu
+        <button id="menu-button" onclick="menuOpenClose()" class="material-symbols-outlined self-start justify-self-start sm:hidden px-3 pt-3 pb-1 m-2">menu
         </button>
-        <a href="#home" ><img src="./images/logo.png" class="hidden sm:inline-flex my-2 max-h-20"></a>
-        <p id="navlink1" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#home">Home</a></p>
-        <p id="navlink2" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#projects">Projects</a></p>
-        <p id="navlink3" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#skills">Skills</a></p>
-        <p id="navlink4" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#about">About</a></p>
-        <p id="navlink5" class="hidden sm:inline-flex md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white"><a href="#footer">Contact</a></p>
-        <button id="navlink6" class="hidden sm:inline-flex p-3 md:text-xl my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="./CV.pdf" target="_blank">Download CV</button>
+        <a href="#home" ><img src="./images/logo.png" class="hidden sm:inline-flex sm:my-2 max-h-20"></a>
+        <button onclick="menuOpenClose()" class="hidden sm:inline-flex border-t border-1 border-dark border-opacity-60 sm:border-0 my-auto" id="navlink1"><a class="inline-flex mx-auto text-lg md:text-xl p-3 rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="#home">Home</a></button>
+        <button onclick="menuOpenClose()"><a id="navlink2" class="hidden sm:inline-flex text-lg md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="#projects">Projects</a></button>
+        <button onclick="menuOpenClose()"><a id="navlink3" class="hidden sm:inline-flex text-lg md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="#skills">Skills</a></button>
+        <button onclick="menuOpenClose()"><a id="navlink4" class="hidden sm:inline-flex text-lg md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="#about">About</a></button>
+        <button onclick="menuOpenClose()"><a id="navlink5" class="hidden sm:inline-flex text-lg md:text-xl p-3 my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="#footer">Contact</a></button>
+        <button onclick="menuOpenClose()" class="mb-2"><a id="navlink6" class="hidden sm:inline-flex text-lg p-3 md:text-xl my-auto rounded-xl hover:bg-dark hover:font-bold hover:text-white" href="./SophiaWarrenCV2024.pdf" target="_blank">Download CV</a></button>
     </nav>
     <main class="w-full">
         <div class="h-1/12 m-30"></div>
         <section id="home" class="min-h-screen flex flex-col items-center text-center justify-evenly bg-right-bottom bg-no-repeat bg-blend-screen bg-[url('./images/avatar2.png')]">
-            <div class="bg-accentpale bg-opacity-90 rounded-full py-20 px-5 mx-5 drop-shadow-lg mt-20">
+            <div class="bg-accentpale bg-opacity-90 rounded-full py-10 sm:py-20 px-5 mx-5 drop-shadow-lg mt-16 sm:mt-20">
                 <h1 class="p-5 text-5xl">Hi! I'm Sophia.</h1>
-                <h2 class="p-5 text-2xl"> I'm a full stack developer in training, based in London.</h2>
+                <h2 class="py-3 sm:py-5 px-6 text-2xl"> I'm a full stack developer based in London.</h2>
             </div>
-            <div class="flex flex-col sm:flex-row items-center justify-center bg-peaches text-dark rounded-md p-5 drop-shadow-lg">
-                <p class="p-5 text-lg md:text-2xl">Find me here:</p>
+            <div class="flex flex-col sm:flex-row items-center justify-center bg-peaches text-dark rounded-md p-2 sm:p-5 drop-shadow-lg">
+                <p class="p-2 sm:p-5 text-lg md:text-2xl">Find me here:</p>
                 <div class="flex flex-row items-center justify-center">
                     <a href="https://www.linkedin.com/in/sophia-warren-48207913b/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor"viewBox="0 0 24 24">
@@ -52,17 +52,30 @@
                         </svg>
                     </a>
                 </div>
-                <span class="py-3"></span>
-                <p class="p-5 text-lg md:text-2xl">or <a href="./CV.pdf" target="_blank" class="font-bold hover:text-white hover:bg-dark rounded-xl border-dark border-2 p-3">Download CV</a></p>
+                <span class="py-1 sm:py-3"></span>
+                <p class="p-5 text-lg md:text-2xl">or <a href="./SophiaWarrenCV2024.pdf" target="_blank" class="font-bold hover:text-white hover:bg-dark rounded-xl border-dark border-2 p-3">Download CV</a></p>
             </div>
             <p><a href="#projects" class="self-end justify-self-end text-dark bg-accentpale p-3 rounded-full bg-opacity-80 text-opacity-80">Click to find out more about my work</a></p>
         </section>
-        <section id="projects" class="min-h-screen flex flex-col items-center text-center justify-around bg-gradient-to-bl from-dark to-green-950 pb-20">
-            <h2  class="p-5 text-5xl mt-20 text-white">Projects</h2>
+        <section id="projects" class="min-h-screen pt-20 flex flex-col items-center text-center justify-around bg-gradient-to-bl from-dark to-green-950 pb-20">
+            <h2  class="p-5 text-5xl mt-5 sm:mt-20 text-white">Projects</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 text-lg md:text-xl mb-20 w-11/12">
+                <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project0image.png')] bg-cover sm:h-4/12">
+                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                        <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
+                            <p class="text-xl font-bold">Stargazer</p>
+                            <p>NextJS app using OpenWeather API | Jan 2024</p>
+                        </div>                        
+                        <span class="hidden sm:inline-flex"><br><br></span>
+                        <div>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://stargazer-puce.vercel.app/" target="_blank">View project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/mudlark" target="_blank">Github repo</a></p>
+                        </div>
+                    </div>
+                </div>
                 <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project1image.png')] bg-cover sm:h-4/12">
-                <div class="pb-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                    <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                    <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
                         <p class="text-xl font-bold">New Zealand Birds</p>
                         <p>Responsive website design | Nov 2023</p>
                     </div>
@@ -74,8 +87,8 @@
                 </div>
                 </div>
                 <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project2image.png')] bg-cover sm:h-4/12">
-                    <div class="pb-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                        <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
                             <p class="text-xl font-bold">DND Character Quiz</p>
                             <p>JavaScript-based quiz | Dec 2023</p>
                         </div>                        <span class="hidden sm:inline-flex"><br><br></span>
@@ -86,8 +99,8 @@
                     </div>
                 </div>
                 <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project3image.png')] bg-cover sm:h-4/12">
-                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                        <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
                             <p class="text-xl font-bold">Escape</p>
                             <p>Text-based adventure in JavaScript | Dec 2023</p>
                         </div>                        
@@ -99,8 +112,8 @@
                     </div>
                 </div>
                 <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project4image.png')] bg-cover sm:h-4/12">
-                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 bg-cover h-full">
-                        <div class="bg-navs p-5 my-2 text-dark text-left shadow-md">
+                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                        <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
                             <p class="text-xl font-bold">Mudlark</p>
                             <p>JavaScript game in HTML Canvas | Oct 2023</p>
                         </div>                        
@@ -111,57 +124,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="m-4 rounded-xl shadow-lg bg-[url('./images/project5image.png')] bg-cover sm:h-4/12">
+                    <div class="py-5 flex flex-col justify-between bg-white bg-opacity-40 rounded-xl bg-cover h-full">
+                        <div class="bg-navs px-5 py-3 text-dark text-left shadow-md">
+                            <p class="text-xl font-bold">Ahoy</p>
+                            <p>NextJS frontend for social app (group project) | Jan 2024</p>
+                        </div>                        
+                        <span class="hidden sm:inline-flex"><br><br></span>
+                        <div>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://ahoy-peach.vercel.app/" target="_blank">View project</a></p>
+                            <p class="bg-dark text-white p-2 my-2 text-left shadow-md w-5/12 sm:w-3/12 rounded-r-full"><a href="https://github.com/phianova/ahoy" target="_blank">Github repo</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <p><a href="#skills" class="py-20 mt-20 text-white text-opacity-80">Click to find out more about my skills</a></p>
         </section>
         <section id="skills" class="min-h-screen py-20 flex flex-col items-center justify-around bg-gradient-to-br from-accentpale to-white">
-            <h2 class="mt-20 p-5 text-5xl">Skills</h2>
+            <h2 class="mt-5 sm:mt-20 p-5 text-5xl">Skills</h2>
             <div class="flex flex-col">
-                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
                     <div class="flex flex-row items-center">
                         <i class="fa-solid fa-code px-3"></i>
                         <p class="px-3 text-2xl">HTML/CSS</p>
                     </div>
                     <p class="px-3 italic">Built web-based applications independently and as part of a bootcamp, including Tailwind CSS</p>
                 </div>
-                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
                     <div class="flex flex-row items-center">
                         <i class="fa-brands fa-js px-3"></i>
                         <p class="px-3 text-2xl">Javascript</p>
                     </div>
                     <p class="px-3 italic">Built JS features and games independently and as part of a bootcamp, including packages e.g. Jest, Nodemon</p>
                 </div>
-                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
                     <div class="flex flex-row items-center">
                         <i class="fa-brands fa-github px-3"></i>
                         <p class="px-3 text-2xl">Git/GitHub</p>
                     </div>
                     <p class="px-3 italic">Over 2 years experience using Git version control in a professional setting</p>
                 </div>
-                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
                     <div class="flex flex-row items-center">
                         <i class="fa-solid fa-database px-3"></i>
                         <p class="px-3 text-2xl">SQL</p>
                     </div>
                     <p class="px-3 italic">Over 2 years experience using SQL to manipulate large administrative datasets</p>
                 </div>
-                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-3">
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
                     <div class="flex flex-row items-center">
                         <i class="fa-solid fa-chart-simple px-3"></i>
                         <p class="px-3 text-2xl">Stata</p>
                     </div>
                     <p class="px-3 italic">Over 2 years experience using Stata to analyse large administrative datasets</p>
                 </div>
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
+                    <div class="flex flex-row items-center">
+                        <i class="fa-brands fa-js px-3"></i>
+                        <p class="px-3 text-2xl">NextJS</p>
+                    </div>
+                    <p class="px-3 italic">Built frontend and full-stack applications as part of a bootcamp</p>
+                </div>
+                <div class="flex flex-col sm:flex-row px-5 items-left sm:items-center py-2">
+                    <div class="flex flex-row items-center">
+                        <i class="fa-solid fa-database px-3"></i>
+                        <p class="px-3 text-2xl">MongoDB & Mongoose</p>
+                    </div>
+                    <p class="px-3 italic">Built APIs and full-stack applications as part of a bootcamp</p>
+                </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2">
                     <div>
                         <h3 class="text-3xl p-5">Currently learning:</h3>
                         <div class="flex flex-row px-5 items-center">
                             <i class="fa-brands fa-js px-3"></i>
-                            <p class="px-3 text-2xl">NextJS</p>
-                        </div>
-                        <div class="flex flex-row px-5 items-center">
-                            <i class="fa-solid fa-database px-3"></i>
-                            <p class="px-3 text-2xl">MongoDB</p>
+                            <p class="px-3 text-2xl">React</p>
                         </div>
                         <div class="flex flex-row px-5 items-center">
                             <i class="fa-solid fa-database px-3"></i>
@@ -195,20 +231,20 @@
             </div>
             <p><a href="#about" class="self-end mt-30 text-accentmid text-opacity-80"><br>Click to find out more about me</a></p>
         </section>
-        <section id="about" class="min-h-screen my-20 flex flex-col items-center text-center justify-around">
-            <h2 class="mt-20 text-5xl">About</h2>
+        <section id="about" class="min-h-screen py-20 flex flex-col items-center text-center justify-around">
+            <h2 class="mt-5 sm:mt-20 text-5xl">About</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 md:w-11/12 mx-10 mt-10 sm:mt-0">
-                <div class="p-5 sm:px-10 sm:pt-10 m-1 bg-accentmid bg-opacity-60 rounded-full drop-shadow-lg text-lg sm:text-xl">
-                    <p class="mx-8 my-8 md:my-16 p-5">I moved into software development after several years working in welfare benefits policy.
+                <div class=" flex items-center p-5 sm:px-10 sm:pt-10 m-1 bg-accentmid bg-opacity-60 rounded-full drop-shadow-lg text-lg sm:text-xl">
+                    <p class="sm:mx-8 my-8 md:my-16 p-5">I moved into software development after several years working in welfare benefits policy.
                     <br>I'm passionate about "tech for good" and using my skills to solve social problems.
                     <br>I'm always looking to learn new things and love a challenge. 
                     <br><br>When I'm not tapping away at a keyboard, I can often be found tapping away at a piano, strumming away at a guitar or singing my little heart out.
                     <br>I'm also a huge foodie and a lover of tabletop RPGs.</p>
                 </div>
                 <div class="my-auto">
-                    <div class="flex flex-col p-5 sm:p-10 m-10 bg-accentmid bg-opacity-60 rounded-full drop-shadow-lg text-xl sm:text-2xl">
-                        <p class="m-8">Got a puzzle you think I can help solve?</p>
-                        <a href="mailto:sophia.m.warren@gmail.com" target="_blank" class="bg-peaches text-2xl text-dark hover:bg-dark hover:text-white hover:font-bold p-4 mx-8 mb-5 rounded-full border-dark border-2 drop-shadow-md">Get in touch</a>    
+                    <div class="flex flex-col p-6 sm:p-10 m-4 sm:m-10 bg-accentmid bg-opacity-60 rounded-full drop-shadow-lg text-xl sm:text-2xl">
+                        <p class="my-8 sm:mx-8 p-2 sm:p-5">Got a puzzle you think I can help solve?</p>
+                        <a href="mailto:sophia.m.warren@gmail.com" target="_blank" class="bg-peaches text-2xl text-dark hover:bg-dark hover:text-white hover:font-bold p-4 mx-4 sm:mx-8 mb-5 rounded-full border-dark border-2 drop-shadow-md">Get in touch</a>    
                     </div>
                     <img src="./images/favicon.png" class="my-10 md:my-auto mx-auto max-h-72 drop-shadow-lg">
                 </div>
@@ -217,7 +253,7 @@
         </section>
     </main>
     <footer id="footer" class="p-10 flex flex-col items-center justify-around h-1/12 w-full bg-navs text-dark shadow-lg z-50">
-        <div class="flex flex-row flex-wrap text-md">
+        <div class="flex flex-row text-md">
             <p id="navlink1" class="pr-3 py-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#home">Home</a></p>
             <p id="navlink2" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#projects">Projects</a></p>
             <p id="navlink3" class="p-3 m-2 rounded-xl hover:font-bold hover:text-accentmid"><a href="#skills">Skills</a></p>
@@ -242,7 +278,7 @@
                 </svg>
             </a>
             <span class="px-3"></span>
-            <button id="navlink6" class="p-2 rounded-full hover:bg-dark border-2 border-dark hover:font-bold hover:text-white" href="./CV.pdf" target="_blank">CV</button>    
+            <a id="navlink6" class="p-2 rounded-full hover:bg-dark border-2 border-dark hover:font-bold hover:text-white" href="./SophiaWarrenCV2024.pdf" target="_blank">CV</a>    
         </div>
         <p class="py-5 mb-10">© Sophia Warren 2023</p>
     </footer>
