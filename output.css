@@ -892,6 +892,10 @@ video {
   background-image: url('./images/project5image.png');
 }
 
+.bg-\[url\(\'\.\/images\/projectXimage\.png\'\)\] {
+  background-image: url('./images/projectXimage.png');
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
